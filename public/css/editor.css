@@ -1,0 +1,137 @@
+.banner {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background: #e7e7e7;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-upload-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.banner-upload-btn img {
+  width: 20px;
+}
+
+.image-upload-btn {
+  width: 30px;
+  height: 30px;
+}
+
+.upload-btn {
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  transform: scale(1.3);
+}
+
+.blog {
+  width: 70vw;
+  height: 100px;
+  display: block;
+  margin: auto;
+  padding: 50px 0;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title,
+.article {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  outline: none;
+  font-size: 50px;
+  font-weight: 600;
+  color: #2d2d2d;
+  resize: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.title::placeholder,
+.article::placeholder {
+  color: #2d2d2d;
+}
+
+.article {
+  height: 500px;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  padding-bottom: 100px;
+  white-space: pre-wrap;
+}
+
+.blog-options {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn.grey {
+  background: #a5a5a5;
+  border-radius: 100%;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  .article {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .article {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
