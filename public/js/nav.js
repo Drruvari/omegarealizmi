@@ -4,19 +4,13 @@ auth.onAuthStateChanged((user) => {
   if (user) {
     // user is loggin
     ul.innerHTML += `
-        <li class="nav-item link-item">
-            <a class="nav-link active" aria-current="page" href="/admin" class="link">Dashboard</a>
-        </li>
-        <li class="nav-item link-item">
-            <a class="nav-link active" aria-current="page" href="#" onClick="logoutUser()" class="link">Logout</a>
-        </li>
-        `;
+      <li><a href="/admin"><span>Faqja juaj</span></a></li>
+      <li><a href="#" onClick="logoutUser()"><span>Dil</span></a></li>
+      `;
   } else {
     // no one is logged in
     ul.innerHTML += `
-    <li class="nav-item link-item">
-        <a class="nav-link active" aria-current="page" href="/admin" class="link">Login</a>
-    </li>
+    <li><a href="/admin"><span>Hyr</span></a></li>
     `;
   }
 });

@@ -17,6 +17,13 @@
 
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Assets -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -25,26 +32,36 @@
         <div id="loginUI"></div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Kasomizmi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 link-container">
-                    <li class="nav-item link-item">
-                        <a class="nav-link active" aria-current="page" href="/" class="link">Home</a>
-                    </li>
-                    <li class="nav-item link-item">
-                        <a class="nav-link" href="/editor" class="link">Editor</a>
-                    </li>
-                </ul>
+    <div class="page">
+        <nav id="colorlib-main-nav" role="navigation">
+            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+            <div class="js-fullheight colorlib-table">
+                <div class="img" style="background-image: url(images/bg_3.jpg);"></div>
+                <div class="colorlib-table-cell js-fullheight">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 text-center">
+                            <h1 class="mb-4"><a href="index.html" class="logo">Kanuni i të shtatëve</a></h1>
+                            <ul class="link-container">
+                                <li class="active"><a href="/"><span>Faqja Kryesore</span></a></li>
+                                <li><a href="/editor"><span>Shkruaj dicka</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </nav>
+
+        <div class="colorlib-page">
+            <header style="background-color: #202020;">
+                <div class="container">
+                    <div class="colorlib-navbar-brand">
+                        <a class="colorlib-logo" href="index.html">Kanuni i të shtatëve</a>
+                    </div>
+                    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+                </div>
+            </header>
         </div>
-    </nav>
+    </div>
 
     <!-- Dashboard -->
     <h1 class="heading">Your Blogs</h1>
@@ -68,6 +85,11 @@
     <script src="js/firebase.js"></script>
     <script src="js/dashboard.js"></script>
     <script src="js/nav.js"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
