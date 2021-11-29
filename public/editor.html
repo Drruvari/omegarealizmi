@@ -5,65 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasomizmi | Shkruaj</title>
+    <title>Kanuni i të shtatëve | Shkruaj</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/editor.css">
 
     <!-- Assets -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <nav id="colorlib-main-nav" role="navigation">
-        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
-        <div class="js-fullheight colorlib-table">
-            <div class="img" style="background-image: url(images/bg_3.jpg);"></div>
-            <div class="colorlib-table-cell js-fullheight">
-                <div class="row no-gutters">
-                    <div class="col-md-12 text-center">
-                        <h1 class="mb-4"><a href="index.html" class="logo">Kanuni i të shtatëve</a></h1>
-                        <ul class="link-container">
-                            <li><a href="/"><span>Faqja Kryesore</span></a></li>
-                            <li class="active"><a href="/editor"><span>Shkruaj dicka</span></a></li>
-                        </ul>
+    <div class="page">
+        <nav id="colorlib-main-nav" role="navigation">
+            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+            <div class="js-fullheight colorlib-table">
+                <div class="img" style="background-image: url(images/bg_3.jpg);"></div>
+                <div class="colorlib-table-cell js-fullheight">
+                    <div class="row no-gutters">
+                        <div class="col-md-12 text-center">
+                            <h1 class="mb-4"><a href="/" class="logo">Kanuni i të shtatëve</a></h1>
+                            <ul class="link-container">
+                                <li><a href="/"><span>Faqja Kryesore</span></a></li>
+                                <li class="active"><a href="/editor"><span>Shkruaj dicka</span></a></li>
+                                <li><a href="/admin"><span>Të gjitha</span></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="colorlib-page">
-        <header>
-            <div class="container">
-                <div class="colorlib-navbar-brand">
-                    <a class="colorlib-logo" href="index.html">Kanuni i të shtatëve</a>
+        <div class="colorlib-page">
+            <header style="background-color: #202020;">
+                <div class="container">
+                    <div class="colorlib-navbar-brand">
+                        <a class="colorlib-logo" href="/">Kanuni i të shtatëve</a>
+                    </div>
+                    <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
                 </div>
-                <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-            </div>
-        </header>
-    </div>
+            </header>
+        </div>
     </div>
 
     <div class="banner accordion-body">
         <input type="file" accept="image/*" id="banner-upload" hidden>
-        <label for="banner-upload" class="banner-upload-btn"><img src="img/upload.png" alt="upload banner"></label>
+        <label for="banner-upload" class="banner-upload-btn"><img src="../img/upload.png" alt="upload banner"></label>
+    </div>
     </div>
 
     <div class="container">
         <textarea type="text" class="title" placeholder="Titulli..."></textarea>
+        <textarea type="text" class="author" placeholder="Autori..."></textarea>
         <textarea type="text" class="article" placeholder="Shkruaj këtu..."></textarea>
     </div>
 
     <div class="blog-options">
-        <label for="image-upload" class="upload-btn"><img class="image-upload-btn" src="img/image-outline.svg"></label>
+        <label for="image-upload" class="upload-btn"><img class="image-upload-btn"
+                src="../img/image-outline.svg"></label>
         <button class="btn dark publish-btn">publiko</button>
         <input type="file" accept="image/*" id="image-upload" hidden>
     </div>
@@ -78,14 +83,14 @@
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
 
 
-    <script src="js/firebase.js"></script>
-    <script src="js/editor.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="../js/editor.js"></script>
+    <script src="../js/nav.js"></script>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
 

@@ -56,7 +56,8 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .title,
-.article {
+.article,
+.author {
   margin-top: 20px;
   width: 100%;
   min-height: 100px;
@@ -72,7 +73,8 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .title::placeholder,
-.article::placeholder {
+.article::placeholder,
+.author::placeholder {
   color: #2d2d2d;
 }
 
@@ -83,6 +85,13 @@ textarea::-webkit-scrollbar-thumb {
   line-height: 30px;
   font-weight: 500;
   padding-bottom: 100px;
+  white-space: pre-wrap;
+}
+
+.author {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
   white-space: pre-wrap;
 }
 

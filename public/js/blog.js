@@ -13,8 +13,8 @@ docRef.get().then((doc) => {
 const setupBlog = (data) => {
   const banner = document.querySelector('.banner');
   const blogTitle = document.querySelector('.title');
-  const author = document.querySelector('.author');
   const titleTag = document.querySelector('title');
+  const author = document.querySelector('.author');
   const publish = document.querySelector('.published');
 
   banner.style.backgroundImage = `url(${data.bannerImage})`;
@@ -22,6 +22,16 @@ const setupBlog = (data) => {
   titleTag.innerHTML += blogTitle.innerHTML = data.title;
   publish.innerHTML += data.publishedAt;
   publish.innerHTML += ` -- ${data.author}`;
+  console.log(author);
+  try {
+    if (data.author == auth.currentUser.email.split('@')[0]) {
+      let editBtn = document.getElementById('edit-blog-btn');
+      editBtn.style.display = 'inline';
+      editBtn.href = `${blogId}/editor`;
+    }
+  } catch {
+    // do nothing
+  }
 
   const article = document.querySelector('.article');
   addArticle(article, data.article);
