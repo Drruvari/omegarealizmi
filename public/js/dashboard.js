@@ -40,6 +40,10 @@ const createBlog = (blog) => {
         <h1 class="blog-title">${data.title.substring(0, 10) + '...'}</h1>
         <p class="blog-overview">${data.article.substring(0, 40) + '...'}</p>
         <a href="/${blog.id}" class="btn dark">read</a>
+        <a href="/${blog.id}/editor" class="btn dark">edit</a>
+        <a href="#" onclick="deleteBlog('${
+          blog.id
+        }')" class="btn dark">delete</a>
     </div>
     `;
 };
