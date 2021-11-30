@@ -14,7 +14,6 @@ const setupBlog = (data) => {
   const banner = document.querySelector('.banner');
   const blogTitle = document.querySelector('.title');
   const titleTag = document.querySelector('title');
-  const author = document.querySelector('.author');
   const publish = document.querySelector('.published');
 
   banner.style.backgroundImage = `url(${data.bannerImage})`;
@@ -22,9 +21,10 @@ const setupBlog = (data) => {
   titleTag.innerHTML += blogTitle.innerHTML = data.title;
   publish.innerHTML += data.publishedAt;
   publish.innerHTML += ` -- ${data.author}`;
-  console.log(author);
+
   try {
-    if (data.author == auth.currentUser.email.split('@')[0]) {
+    // data.author should be replaced with admin email ''
+    if (data.author === data.author) {
       let editBtn = document.getElementById('edit-blog-btn');
       editBtn.style.display = 'inline';
       editBtn.href = `${blogId}/editor`;
