@@ -40,12 +40,18 @@ const createBlog = (blog) => {
         <h1 class="blog-title">${data.title.substring(0, 10) + '...'}</h1>
         <p class="blog-overview">${data.article.substring(0, 40) + '...'}</p>
         <a href="/${blog.id}" class="btn dark">read</a>
-        <a href="/${blog.id}/editor" class="btn dark">edit</a>
-        <a href="#" onclick="deleteBlog('${
-          blog.id
-        }')" class="btn dark">delete</a>
     </div>
     `;
+  auth.onAuthStateChanged((user) => {
+    if (user.uid === 'BlypPsRXN2TKFTv7w0ZS0II6fg13') {
+      blogSection.innerHTML += `
+    <div class="blog-card">
+        <a href="/${blog.id}/editor" class="btn dark">edit</a>
+        <a href="#" onclick="deleteBlog('${blog.id}')" class="btn dark">delete</a>
+    </div>
+    `;
+    }
+  });
 };
 
 const deleteBlog = (id) => {
