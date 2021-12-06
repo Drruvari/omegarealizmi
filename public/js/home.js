@@ -1,6 +1,7 @@
 const blogSection = document.querySelector('.blogs-section');
 
 db.collection('blogs')
+  .orderBy('publishedAt', 'desc')
   .get()
   .then((blogs) => {
     blogs.forEach((blog) => {
