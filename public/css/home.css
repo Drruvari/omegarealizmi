@@ -88,7 +88,7 @@ footer {
   transition: 0.2s 0.1s;
 }
 
-/* 9. hover-slide-right */
+/* hover-slide-right */
 .read-button.hover-slide-right::before {
   top: 0;
   bottom: 0;
@@ -100,6 +100,7 @@ footer {
   width: 100%;
 }
 
+/* Blogs */
 .blogs-section {
   word-break: break-word;
   width: 100%;
@@ -111,9 +112,8 @@ footer {
 
 .blog-image {
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 10px;
   margin-bottom: 10px;
 }
 

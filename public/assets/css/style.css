@@ -11097,6 +11097,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 .hero-wrap .slider-text .desc h3 {
   color: rgba(255, 255, 255, 0.8);
