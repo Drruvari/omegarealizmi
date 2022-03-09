@@ -1,3 +1,7 @@
+* {
+  font-family: 'Shippori Mincho', serif;
+}
+
 .blog,
 .article {
   position: relative;

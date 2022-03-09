@@ -46,7 +46,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Shippori Mincho', serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -67,7 +67,7 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: -apple-system, BlinkMacSystemFont, 'Shippori Mincho', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1rem;
@@ -10636,7 +10636,7 @@ a.text-dark:focus {
 }
 
 body {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Shippori Mincho', serif;
   font-size: 16px;
   line-height: 1.8;
   font-weight: normal;
@@ -10676,7 +10676,7 @@ h5,
 .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Shippori Mincho', serif;
   color: #000;
 }
 
@@ -10821,7 +10821,7 @@ h5,
   display: inline-block;
   margin-bottom: 0;
   line-height: 1.5;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Shippori Mincho', serif;
 }
 #colorlib-main-nav .logo span {
   font-size: 14px;
@@ -10923,7 +10923,7 @@ header .colorlib-navbar-brand .colorlib-logo {
   display: inline-block;
   margin-bottom: 0;
   line-height: 1.5;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Shippori Mincho', serif;
   text-transform: uppercase;
 }
 header .colorlib-navbar-brand .colorlib-logo span {
@@ -11097,6 +11097,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 .hero-wrap .slider-text .desc h3 {
   color: rgba(255, 255, 255, 0.8);
