@@ -7,8 +7,10 @@
 
 body {
   width: 100%;
-  background-color: #fff;
+  background-color: #deb36d;
   color: #1b1b1b;
+  text-rendering: optimizeLegibility;
+  font-weight: initial;
 }
 
 .carousel-item > img {
@@ -23,12 +25,12 @@ body {
 }
 
 footer {
-  background: #212529;
+  background: #0d211f;
 }
 
 ::selection {
-  background: #202020;
-  color: #fff;
+  background: #0d211f;
+  color: #deb36d;
 }
 
 * {
@@ -169,4 +171,8 @@ footer {
     height: 200px;
     object-fit: cover;
   }
+}
+
+#sticky-footer {
+  background-color: #0d211f !important;
 }
