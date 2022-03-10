@@ -1,13 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Shippori Mincho', serif;
-}
-
 body {
   width: 100%;
-  background-color: #deb36d;
+  background-color: var(--secondary-color);
   color: #1b1b1b;
   text-rendering: optimizeLegibility;
   font-weight: initial;
@@ -25,81 +18,7 @@ body {
 }
 
 footer {
-  background: #0d211f;
-}
-
-::selection {
-  background: #0d211f;
-  color: #deb36d;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-:active,
-:hover,
-:focus {
-  outline: 0 !important;
-  outline-offset: 0;
-}
-::before,
-::after {
-  position: absolute;
-  content: '';
-}
-.read-button {
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  min-width: 150px;
-  text-align: center;
-}
-.read-button span {
-  position: relative;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 20px;
-  transition: 0.3s;
-}
-
-/*--- btn-2 ---*/
-.btn-2::before {
-  background-color: rgb(28, 31, 30);
-  transition: 0.3s ease-out;
-}
-.btn-2 span {
-  color: rgb(28, 31, 30);
-  border: 1px solid rgb(28, 31, 30);
-  transition: 0.2s;
-}
-.btn-2 span:hover {
-  color: rgb(255, 255, 255);
-  transition: 0.2s 0.1s;
-}
-
-/* hover-slide-right */
-.read-button.hover-slide-right::before {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-}
-.read-button.hover-slide-right:hover::before {
-  width: 100%;
+  background: var(--primary-color);
 }
 
 /* Blogs */
@@ -174,5 +93,5 @@ footer {
 }
 
 #sticky-footer {
-  background-color: #0d211f !important;
+  background-color: var(--primary-color) !important;
 }

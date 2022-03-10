@@ -19,7 +19,7 @@ const createBlog = (blog) => {
         <img src="${data.bannerImage}" class="blog-image" alt="">
         <p class="blog-overview">${data.article.substring(0, 40) + '...'}</p>
  
-        <a href="/${blog.id}" class="read-button btn-2 hover-slide-right">
+        <a href="/${blog.id}" class="read-button btn-1 hover-slide-right">
          <span>Lexo</span>
         </a>
     </div>

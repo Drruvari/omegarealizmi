@@ -1,5 +1,9 @@
-* {
-  font-family: 'Shippori Mincho', serif;
+body {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: #1b1b1b;
+  text-rendering: optimizeLegibility;
+  font-weight: initial;
 }
 
 .blog,
@@ -20,9 +24,8 @@
 .published {
   margin: 20px 0 60px;
   padding: 0 10px;
-  text-transform: capitalize;
   font-style: italic;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
 }
 
 .published span {
@@ -32,27 +35,25 @@
 
 .article * {
   word-break: break-word;
-  margin: 30px 0;
-  color: #2d2d2d;
+  color: var(--primary-color);
 }
 
 .article-image {
   max-width: 100%;
-  max-height: 400px;
-  display: block;
+  max-height: 62.5em;
   margin: 30px auto;
   object-fit: contain;
 }
 
 .sub-heading {
   padding: 0 5vw;
-  color: #2d2d2d;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 40px;
   margin-top: 80px;
 }
 
-#edit-blog-btn {
+/* #edit-blog-btn {
   background: rgba (0, 0, 0, 0.2);
   display: none;
-}
+} */
